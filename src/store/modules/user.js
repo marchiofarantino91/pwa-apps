@@ -1,12 +1,16 @@
 import * as api from '../../api/user'
 
 const state = {
-    token:null
+    token:null,
+    drawer:null
 }
 const mutations = {
     SET_TOKEN (state, token) {
         state.token =token
-      }
+      },
+    SET_drawer (state, drawer) {
+        state.drawer =drawer
+      },
 }
 const actions = {
     login({commit},info){
